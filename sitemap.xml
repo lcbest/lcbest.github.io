@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chanceli.com/Flutter%E7%AC%94%E8%AE%B0%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2020-04-06T15:57:15.066Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/Dart%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2020-03-22T12:56:07.890Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chanceli.com/DataStructurePart3/</loc>
     
     <lastmod>2020-03-22T12:29:24.181Z</lastmod>
@@ -23,6 +37,41 @@
   </url>
   
   <url>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart2/</loc>
+    
+    <lastmod>2019-09-22T09:42:06.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart1/</loc>
+    
+    <lastmod>2019-09-18T15:10:23.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart6/</loc>
+    
+    <lastmod>2019-09-08T09:20:51.898Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/EffectiveObjectiveCPart7/</loc>
+    
+    <lastmod>2019-09-08T09:20:16.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://chanceli.com/imeasemob/</loc>
+    
+    <lastmod>2019-09-08T08:45:15.220Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://chanceli.com/DataStructurePart2/</loc>
     
     <lastmod>2019-09-04T06:58:25.653Z</lastmod>
@@ -33,13 +82,6 @@
     <loc>http://chanceli.com/DataStructurePart1/</loc>
     
     <lastmod>2019-09-04T06:58:05.423Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chanceli.com/imeasemob/</loc>
-    
-    <lastmod>2019-08-26T12:25:03.147Z</lastmod>
     
   </url>
   
@@ -72,20 +114,6 @@
   </url>
   
   <url>
-    <loc>http://chanceli.com/aboutme/</loc>
-    
-    <lastmod>2019-05-30T03:52:13.108Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chanceli.com/EffectiveObjectiveCPart2/</loc>
-    
-    <lastmod>2018-12-21T11:04:51.409Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://chanceli.com/SevenTimesHaveIDespisedMySoul/</loc>
     
     <lastmod>2018-12-21T11:03:09.743Z</lastmod>
@@ -110,27 +138,6 @@
     <loc>http://chanceli.com/RuntimeSummary/</loc>
     
     <lastmod>2018-12-08T14:34:14.857Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chanceli.com/EffectiveObjectiveCPart1/</loc>
-    
-    <lastmod>2018-12-08T11:51:36.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chanceli.com/EffectiveObjectiveCPart7/</loc>
-    
-    <lastmod>2018-12-06T10:04:13.873Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://chanceli.com/EffectiveObjectiveCPart6/</loc>
-    
-    <lastmod>2018-12-06T10:03:56.385Z</lastmod>
     
   </url>
   
