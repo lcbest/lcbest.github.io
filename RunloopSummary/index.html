@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>RunLoop总结 | Chance</title>
+    <title>【iOS 开发】RunLoop总结 | Chance</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="RunLoop总结 | Chance">
+    <meta name="twitter:title" content="【iOS 开发】RunLoop总结 | Chance">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="RunLoop总结 | Chance">
+    <meta property="og:title" content="【iOS 开发】RunLoop总结 | Chance">
     <meta property="og:description" content="iOS developer">
 
     
@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -168,11 +170,11 @@
       </span> 
    
     </div>
-    <h1 class="post-title">RunLoop总结</h1>
+    <h1 class="post-title">【iOS 开发】RunLoop总结</h1>
   </header>
 
   <section class="post">
-    <p>Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。<br><a id="more"></a><br>作用：接受循环事件和安排线程的工作。<br>目的：让线程在有任务的时候忙于工作，而没有任务的时候处于休眠状态。</p>
+    <p>Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。<br>作用：接受循环事件和安排线程的工作。<br>目的：让线程在有任务的时候忙于工作，而没有任务的时候处于休眠状态。</p>
 <h4 id="RunLoop概念"><a href="#RunLoop概念" class="headerlink" title="RunLoop概念"></a>RunLoop概念</h4><p>Runloop运行循环<br>iOS中通常所说的Runloop指的是NSRunloop（Foundation框架）或者CFRunloopRef（CoreFoundation框架），CFRunloopRef是纯C的函数，而NSRunloop仅仅是CFRunloopRef的一层OC封装。</p>
 <h4 id="RunLoop作用"><a href="#RunLoop作用" class="headerlink" title="RunLoop作用"></a>RunLoop作用</h4><ol>
 <li>保持程序的持续运行。</li>
@@ -233,7 +235,7 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart1/" title="Effective Objective-C 2.0（第1章）">Effective Objective-C 2.0（第1章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C
+                编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C1.了解Objective-C 语言的起源Objective-C使用消息结构messaging structure，而非函数调用function calling。消息结构：运行时所运行的代码是由运行环境决定的。运行时才会
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2017-12-31T16:01:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -246,10 +248,14 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/RuntimeSummary/" title="Runtime总结">Runtime总结</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/RuntimeSummary/" title="【iOS 开发】Runtime总结">【iOS 开发】Runtime总结</a></h2>
                 <p class="excerpt">
                 
-                一、Runtime是什么？
+                一、Runtime是什么？Runtime 运行时，就是系统在运行的时候的一些机制，其中最主要的是消息机制。Runtime 基本是用C和汇编编写的。
+OC与C语言在函数调用上的区别：C语言：
+
+函数的调用在编译的时候就决定调用哪个函数，编译完成之后直接顺序执行，无任何二义性。
+C语言在编译阶段调用未实
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2017-04-23T16:00:00.000Z" class="post-list__meta--date date">2017-04-24</time> &#8226; <span class="post-list__meta--tags tags">于 

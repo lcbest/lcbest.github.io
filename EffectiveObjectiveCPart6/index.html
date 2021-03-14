@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -172,8 +174,7 @@
   </header>
 
   <section class="post">
-    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第6章-块与大中枢派发"><a href="#第6章-块与大中枢派发" class="headerlink" title="第6章 块与大中枢派发"></a>第6章 块与大中枢派发</h3><a id="more"></a>
-<h4 id="37-理解“块”这一概念"><a href="#37-理解“块”这一概念" class="headerlink" title="37.理解“块”这一概念"></a>37.理解“块”这一概念</h4><ul>
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第6章-块与大中枢派发"><a href="#第6章-块与大中枢派发" class="headerlink" title="第6章 块与大中枢派发"></a>第6章 块与大中枢派发</h3><h4 id="37-理解“块”这一概念"><a href="#37-理解“块”这一概念" class="headerlink" title="37.理解“块”这一概念"></a>37.理解“块”这一概念</h4><ul>
 <li>块是C、C++、Objective-C 中的词法闭包。</li>
 <li>块可接受参数，也可返回值。</li>
 <li>块可以分配在栈或堆上，也可以是全局的。分配在栈上的块可拷贝到堆里，这样的话，就和标准的 Objective-C 对象一样，具备引用计数了。</li>
@@ -277,7 +278,7 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart7/" title="Effective Objective-C 2.0（第7章）">Effective Objective-C 2.0（第7章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第7章 系统框架
+                编写高质量iOS与OS X代码的52个有效方法第7章 系统框架47.熟悉系统框架将一系列代码封装为动态库（dynamic library），并在其中放入描述其接口的头文件，这样做出来的东西就叫框架。有时为iOS平台构建的第三方框架所使用的是静态库（static library），这是因为iOS应用程
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-06T16:07:00.000Z" class="post-list__meta--date date">2018-01-07</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -293,7 +294,9 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart5/" title="Effective Objective-C 2.0（第5章）">Effective Objective-C 2.0（第5章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理
+                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理29.理解引用计数
+引用计数机制通过可以递增递减的计数器来管理内存。对象创建好之后，其保留计数至少为1。若保留计数为正，则对象继续存活。当保留计数降为0时，对象就被销毁了。
+在对象的生命周期中，其余对象通过引用来保留或释放此对象。保留与释
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-04T16:05:00.000Z" class="post-list__meta--date date">2018-01-05</time> &#8226; <span class="post-list__meta--tags tags">于 

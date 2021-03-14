@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -172,8 +174,7 @@
   </header>
 
   <section class="post">
-    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第2章-对象、消息、运行期"><a href="#第2章-对象、消息、运行期" class="headerlink" title="第2章 对象、消息、运行期"></a>第2章 对象、消息、运行期</h3><a id="more"></a>
-<h4 id="6-理解“属性”这一概念"><a href="#6-理解“属性”这一概念" class="headerlink" title="6.理解“属性”这一概念"></a>6.理解“属性”这一概念</h4><p>使用属性，编译器会自动编写访问这些属性所需要的方法，这个过程由编译器在编译期执行。除了生成方法代码外，编译器还会自动向类中添加适当类型的实例变量，并且在属性名前面加下划线。</p>
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第2章-对象、消息、运行期"><a href="#第2章-对象、消息、运行期" class="headerlink" title="第2章 对象、消息、运行期"></a>第2章 对象、消息、运行期</h3><h4 id="6-理解“属性”这一概念"><a href="#6-理解“属性”这一概念" class="headerlink" title="6.理解“属性”这一概念"></a>6.理解“属性”这一概念</h4><p>使用属性，编译器会自动编写访问这些属性所需要的方法，这个过程由编译器在编译期执行。除了生成方法代码外，编译器还会自动向类中添加适当类型的实例变量，并且在属性名前面加下划线。</p>
 <p>可以使用 @synthesize 语法来指定实例变量的名字。</p>
 <p>@dynamic 关键字会告诉编译器：不要自动创建实现属性所用的实例变量，也不要为其创建存取方法。而且，在编译器访问属性的代码时，即使编译器发现没有定义存取方法，也不会报错，它相信这些方法能在运行期找到。</p>
 <p>属性特质</p>
@@ -319,7 +320,12 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart3/" title="Effective Objective-C 2.0（第3章）">Effective Objective-C 2.0（第3章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
+                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计15.用前缀避免命名空间冲突
+选择与你的公司、应用程序或者二者皆有关联之名作为类名的前缀，并在所有代码中均使用这一前缀。
+若自己所开发的程序库中用到了第三方库，则应为其中的名称加上前缀。
+
+16.提供“全能初始化方法”
+在类中提供
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-02T16:03:00.000Z" class="post-list__meta--date date">2018-01-03</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -335,7 +341,7 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart1/" title="Effective Objective-C 2.0（第1章）">Effective Objective-C 2.0（第1章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C
+                编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C1.了解Objective-C 语言的起源Objective-C使用消息结构messaging structure，而非函数调用function calling。消息结构：运行时所运行的代码是由运行环境决定的。运行时才会
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2017-12-31T16:01:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 

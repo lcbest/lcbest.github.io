@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Chance | 不以物喜，不以己悲。</title>
+    <title>Chance | Stay hungry, stay foolish.</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Chance | 不以物喜，不以己悲。">
+    <meta name="twitter:title" content="Chance | Stay hungry, stay foolish.">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Chance | 不以物喜，不以己悲。">
+    <meta property="og:title" content="Chance | Stay hungry, stay foolish.">
     <meta property="og:description" content="iOS developer">
 
     
@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -166,6 +168,8 @@
       <p class="excerpt">
     
       第6章 树树（Tree）是 n（n≥0）个结点的有限集。n=0 时称为空树。在任意一棵非空树中：（1）有且仅有一个特定的称为根（Root）的结点；（2）当 n&amp;gt;1 时，其余结点可分为 m（m&amp;gt;0）个互不相交的有限集 T1、T2、……、Tm，其中每一个集合本身又是一棵树，并且称为根的子树（SubTree）。
+树的定义
+树（Tree）是 n（n≥0）个结点的有限集。n=0 时称为空树。在任
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2019-09-15T15:55:00.000Z" class="post-list__meta--date date">2019-09-15</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -180,6 +184,13 @@
       <p class="excerpt">
     
       第5章 串串（string）是由零个或多个字符组成的有限序列，又名叫字符串。
+串的定义
+串（string）是由零个或多个字符组成的有限序列，又名叫字符串。
+
+串的比较给定两个串：s= “a1a2……an“,  t= “b1b2……bm“, 当满足以下条件之一时，s&amp;lt;t。
+
+n&amp;lt;m，且ai=bi（i=1, 2, ……, n）。
+存在某个k&amp;lt;min(m, n), 使得ai=bi（i=
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2019-09-10T14:24:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -190,10 +201,34 @@
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/优化iOS安装包大小/" title="link to post.title">【iOS 开发】优化 iOS 安装包大小</a></h2>
+      <p class="excerpt">
+    
+      最近优化了一下我负责的两个App ipa 包大小，记录一下优化方法。
+App1:优化前：37.8MB 优化后：15.7MB
+
+移除重复图片，多余图片，压缩大的图片，去掉用不到的类。包大小变为35.1MB，减少了2.7MB。
+把环信含音视频的 SDK 换成不含音视频的 SDK。包大小变为28MB，减少了7.1MB。
+移除 armv7，不再支持 iPhone 4、iPhone 4s。包大小变为20.4
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2019-09-09T16:00:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+</span><a class="btn-border-small" href="/优化iOS安装包大小/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/DataStructurePart3/" title="link to post.title">《大话数据结构》三</a></h2>
       <p class="excerpt">
     
       第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。
+栈的定义
+栈（stack）是限定仅在表尾进行插入和删除操作的线性表。
+
+我们把允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何数据元素的栈称为空栈。栈又称为后进先出（Last In First Out）的线性表，简称 LIFO 结构。
+栈的插
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2019-09-08T14:58:00.000Z" class="post-list__meta--date date">2019-09-08</time> &#8226; <span class="post-list__meta--tags tags">于 

@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -172,8 +174,7 @@
   </header>
 
   <section class="post">
-    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第4章-协议与分类"><a href="#第4章-协议与分类" class="headerlink" title="第4章 协议与分类"></a>第4章 协议与分类</h3><a id="more"></a>
-<h4 id="23-通过委托与数据源协议进行对象间通信"><a href="#23-通过委托与数据源协议进行对象间通信" class="headerlink" title="23.通过委托与数据源协议进行对象间通信"></a>23.通过委托与数据源协议进行对象间通信</h4><ul>
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第4章-协议与分类"><a href="#第4章-协议与分类" class="headerlink" title="第4章 协议与分类"></a>第4章 协议与分类</h3><h4 id="23-通过委托与数据源协议进行对象间通信"><a href="#23-通过委托与数据源协议进行对象间通信" class="headerlink" title="23.通过委托与数据源协议进行对象间通信"></a>23.通过委托与数据源协议进行对象间通信</h4><ul>
 <li>委托模式为对象提供了一套接口，使其可由此将相关事件告知其他对象。</li>
 <li>将委托对象应该支持的接口定义成协议，在协议中把可能需要处理的事件定义成方法。</li>
 <li>当某对象需要从另外一个对象中获取数据时，可以使用委托模式。这种情境下，该模式亦称“数据源协议”（data source protocal）。</li>
@@ -216,7 +217,9 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart5/" title="Effective Objective-C 2.0（第5章）">Effective Objective-C 2.0（第5章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理
+                编写高质量iOS与OS X代码的52个有效方法第5章 内存管理29.理解引用计数
+引用计数机制通过可以递增递减的计数器来管理内存。对象创建好之后，其保留计数至少为1。若保留计数为正，则对象继续存活。当保留计数降为0时，对象就被销毁了。
+在对象的生命周期中，其余对象通过引用来保留或释放此对象。保留与释
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-04T16:05:00.000Z" class="post-list__meta--date date">2018-01-05</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -232,7 +235,12 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart3/" title="Effective Objective-C 2.0（第3章）">Effective Objective-C 2.0（第3章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
+                编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计15.用前缀避免命名空间冲突
+选择与你的公司、应用程序或者二者皆有关联之名作为类名的前缀，并在所有代码中均使用这一前缀。
+若自己所开发的程序库中用到了第三方库，则应为其中的名称加上前缀。
+
+16.提供“全能初始化方法”
+在类中提供
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-02T16:03:00.000Z" class="post-list__meta--date date">2018-01-03</time> &#8226; <span class="post-list__meta--tags tags">于 

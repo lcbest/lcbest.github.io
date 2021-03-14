@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Chance | Stay hungry, stay foolish.</title>
+    <title>【iOS 开发】优化 iOS 安装包大小 | Chance</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Chance | Stay hungry, stay foolish.">
+    <meta name="twitter:title" content="【iOS 开发】优化 iOS 安装包大小 | Chance">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Chance | Stay hungry, stay foolish.">
+    <meta property="og:title" content="【iOS 开发】优化 iOS 安装包大小 | Chance">
     <meta property="og:description" content="iOS developer">
 
     
@@ -39,7 +39,7 @@
     <link rel="alternate" type="application/rss+xml" title="Chance" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://chanceli.com"/>
+    <link rel="canonical" href="http://chanceli.com/优化iOS安装包大小/"/>
 
                  
 </head>
@@ -158,71 +158,100 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-09-09T16:00:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">【iOS 开发】优化 iOS 安装包大小</h1>
+  </header>
+
+  <section class="post">
+    <p>最近优化了一下我负责的两个App ipa 包大小，记录一下优化方法。</p>
+<h3 id="App1"><a href="#App1" class="headerlink" title="App1:"></a>App1:</h3><p>优化前：37.8MB 优化后：15.7MB</p>
+<ol>
+<li>移除重复图片，多余图片，压缩大的图片，去掉用不到的类。包大小变为35.1MB，减少了2.7MB。</li>
+<li>把环信含音视频的 SDK 换成不含音视频的 SDK。包大小变为28MB，减少了7.1MB。</li>
+<li>移除 armv7，不再支持 iPhone 4、iPhone 4s。包大小变为20.4MB，减少了7.6MB。</li>
+<li>移除百度地图 SDK (项目里只用到了百度定位 SDK )。包大小变为16.6MB，减少了3.8MB。</li>
+<li>移除环信 UI 中的兔斯基 GIF 图。包大小变为16MB，减少了0.6MB。</li>
+<li>启动图替换为压缩后的启动图。包大小变为15.7MB，减少了0.3MB。</li>
+</ol>
+<h3 id="App2："><a href="#App2：" class="headerlink" title="App2："></a>App2：</h3><p>优化前：27.7MB 优化后：9.2MB</p>
+<ol>
+<li>移除环信音视频 SDK，包大小变为20.3MB，减少了7.4MB。</li>
+<li>移除百度地图 SDK，包大小变为14.8MB，减少了5.5MB。</li>
+<li>移除 armv7，包大小变为9.8MB，减少了5MB。</li>
+<li>移除环信 UI 中的兔斯基 GIF 图。包大小变为9.2MB，减少了0.6MB。</li>
+</ol>
+<h3 id="小提示"><a href="#小提示" class="headerlink" title="小提示"></a>小提示</h3><ul>
+<li>AppStore 上 App 信息中的展示的大小指的是安装大小，并非下载大小。所以要比打出来的 ipa 包大很多。</li>
+<li>在各个机型上面的大小也不尽相同。</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>通过这次实践，我发现影响包大小的主要因素是某些较大的第三方库及库里的图片，以及支持iPhone 4、4s 的 armv7。对于用不到的类、图片等资源文件要及时清理，使用被蓝湖等工具压缩过的图片等方式来改善安装包大小。</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
     
-  <ol class="post-list">
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/DataStructurePart4/" title="《大话数据结构》四">《大话数据结构》四</a></h2>
+                <p class="excerpt">
+                
+                第5章 串串（string）是由零个或多个字符组成的有限序列，又名叫字符串。
+串的定义
+串（string）是由零个或多个字符组成的有限序列，又名叫字符串。
+
+串的比较给定两个串：s= “a1a2……an“,  t= “b1b2……bm“, 当满足以下条件之一时，s&amp;lt;t。
+
+n&amp;lt;m，且ai
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-09-10T14:24:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
+</span><a class="btn-border-small" href="/DataStructurePart4/">阅读全文</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/DataStructurePart3/" title="《大话数据结构》三">《大话数据结构》三</a></h2>
+                <p class="excerpt">
+                
+                第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。
+栈的定义
+栈（stack）是限定仅在表尾进行插入和删除操作的线性表。
+
+我们把允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何数据元素的栈称为
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2019-09-08T14:58:00.000Z" class="post-list__meta--date date">2019-09-08</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
+</span><a class="btn-border-small" href="/DataStructurePart3/">阅读全文</a></div>
+                       
+            </div>
+        
+     
+   
+   
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/Flutter笔记之环境配置/" title="link to post.title">【Flutter 开发】Flutter笔记之环境配置</a></h2>
-      <p class="excerpt">
-    
-      Flutter笔记之环境配置
-Android Studio 下载地址：https://developer.android.google.cn/studioFlutter SDK 下载地址：https://flutter.dev/docs/get-started/install/macos
-配置Flutter SDK添加用户环境变量打开终端，输入vim ~/.bash_profile,回车，编辑/.
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2020-04-06T15:34:00.000Z" class="post-list__meta--date date">2020-04-06</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/Flutter/">Flutter</a>
-</span><a class="btn-border-small" href="/Flutter笔记之环境配置/">阅读全文</a></div>
-      <hr class="post-list__divider">
-    </li>
+</section>
+
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/Dart笔记/" title="link to post.title">【Flutter 开发】Dart笔记</a></h2>
-      <p class="excerpt">
-    
-      Flutter之Dart笔记
-1. 入口方法、变量、常量1.1 入口方法main方法123void main() &amp;#123;&amp;#125;
-1.2 常量变量
-var 变量
-const 常量
-final 常量
-
-const 与 final区别final 可以开始不赋值，只能赋值一次；而final不仅有const的编译时常量的特性，最重要的它是运行时常量，并且final是惰性初始化，即在运行时第一次使
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2020-03-02T10:06:00.000Z" class="post-list__meta--date date">2020-03-02</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/Dart/">Dart</a>, <a class="tag-link" href="/tags/Flutter/">Flutter</a>
-</span><a class="btn-border-small" href="/Dart笔记/">阅读全文</a></div>
-      <hr class="post-list__divider">
-    </li>
-  
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
-
 
             <footer class="footer">
     <span id="busuanzi_container_site_pv">

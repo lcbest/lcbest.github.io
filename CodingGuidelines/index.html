@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>iOS 代码规范 | Chance</title>
+    <title>【iOS 开发】iOS 代码规范 | Chance</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="iOS 代码规范 | Chance">
+    <meta name="twitter:title" content="【iOS 开发】iOS 代码规范 | Chance">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="iOS 代码规范 | Chance">
+    <meta property="og:title" content="【iOS 开发】iOS 代码规范 | Chance">
     <meta property="og:description" content="iOS developer">
 
     
@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -168,7 +170,7 @@
       </span> 
    
     </div>
-    <h1 class="post-title">iOS 代码规范</h1>
+    <h1 class="post-title">【iOS 开发】iOS 代码规范</h1>
   </header>
 
   <section class="post">
@@ -180,8 +182,7 @@
 <li>在方法内部不要重复计算某个值，适当的情况下可以将计算结果缓存起来。</li>
 <li>尽量减少单例的使用。</li>
 <li>提供一个统一的数据管理入口，不管是 MVC、MVVM、MVP 模块内提供一个统一的数据管理入口会使得代码变得更容易管理和维护。</li>
-<li>除了 .m 文件中方法，其他的地方”{“不需要另起一行。<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">- (void)getGooodsList</span><br><span class="line">&#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)doHomework</span><br><span class="line">&#123;</span><br><span class="line">    if (self.hungry) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (self.thirsty) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (self.tired) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    papapa.then.over;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>除了 .m 文件中方法，其他的地方”{“不需要另起一行。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">- (void)getGooodsList</span><br><span class="line">&#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)doHomework</span><br><span class="line">&#123;</span><br><span class="line">    if (self.hungry) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (self.thirsty) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (self.tired) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    papapa.then.over;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><ol>
@@ -297,6 +298,10 @@
                 <p class="excerpt">
                 
                 第1章 数据结构绪论
+数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。
+数据元素： 是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。
+数据项：一个数据元素可以由若干个数据项组成。数据项是数据不可分割的最小单位。
+数据
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2019-03-05T15:41:00.000Z" class="post-list__meta--date date">2019-03-05</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -315,6 +320,8 @@
                 
 Seven times have I despised my soul:
 ——Kahlil Gibran
+The first time when I saw her being meek that she might attain height.
+The second time when I sa
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-12-21T10:09:00.000Z" class="post-list__meta--date date">2018-12-21</time> &#8226; <span class="post-list__meta--tags tags">于 

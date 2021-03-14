@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Chance | 不以物喜，不以己悲。</title>
+    <title>Chance | Stay hungry, stay foolish.</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Chance | 不以物喜，不以己悲。">
+    <meta name="twitter:title" content="Chance | Stay hungry, stay foolish.">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Chance | 不以物喜，不以己悲。">
+    <meta property="og:title" content="Chance | Stay hungry, stay foolish.">
     <meta property="og:description" content="iOS developer">
 
     
@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -162,10 +164,29 @@
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/SevenTimesHaveIDespisedMySoul/" title="link to post.title">我曾七次鄙视我的灵魂（卡里.纪伯伦）</a></h2>
+      <p class="excerpt">
+    
+      
+Seven times have I despised my soul:
+——Kahlil Gibran
+The first time when I saw her being meek that she might attain height.
+The second time when I saw her limping before the crippled.
+The third time 
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-12-21T10:09:00.000Z" class="post-list__meta--date date">2018-12-21</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/诗和远方/">诗和远方</a>
+</span><a class="btn-border-small" href="/SevenTimesHaveIDespisedMySoul/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart7/" title="link to post.title">Effective Objective-C 2.0（第7章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第7章 系统框架
+      编写高质量iOS与OS X代码的52个有效方法第7章 系统框架47.熟悉系统框架将一系列代码封装为动态库（dynamic library），并在其中放入描述其接口的头文件，这样做出来的东西就叫框架。有时为iOS平台构建的第三方框架所使用的是静态库（static library），这是因为iOS应用程序不允许在其中包含动态库。这些东西严格来讲并不是真正的框架，然而也经常视为框架。不过，所有iOS平台
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-06T16:07:00.000Z" class="post-list__meta--date date">2018-01-07</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -179,7 +200,13 @@
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart6/" title="link to post.title">Effective Objective-C 2.0（第6章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第6章 块与大中枢派发
+      编写高质量iOS与OS X代码的52个有效方法第6章 块与大中枢派发37.理解“块”这一概念
+块是C、C++、Objective-C 中的词法闭包。
+块可接受参数，也可返回值。
+块可以分配在栈或堆上，也可以是全局的。分配在栈上的块可拷贝到堆里，这样的话，就和标准的 Objective-C 对象一样，具备引用计数了。
+
+38.为常用的块类型创建 typedef
+以typedef重新定义块类型，可令块
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-05T16:06:00.000Z" class="post-list__meta--date date">2018-01-06</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -193,7 +220,12 @@
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart5/" title="link to post.title">Effective Objective-C 2.0（第5章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第5章 内存管理
+      编写高质量iOS与OS X代码的52个有效方法第5章 内存管理29.理解引用计数
+引用计数机制通过可以递增递减的计数器来管理内存。对象创建好之后，其保留计数至少为1。若保留计数为正，则对象继续存活。当保留计数降为0时，对象就被销毁了。
+在对象的生命周期中，其余对象通过引用来保留或释放此对象。保留与释放操作分别会递增及递减保留计数。
+
+30.以ARC简化引用计数
+有ARC之后，程序员就无须担心内存管
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-04T16:05:00.000Z" class="post-list__meta--date date">2018-01-05</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -207,7 +239,11 @@
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart4/" title="link to post.title">Effective Objective-C 2.0（第4章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第4章 协议与分类
+      编写高质量iOS与OS X代码的52个有效方法第4章 协议与分类23.通过委托与数据源协议进行对象间通信
+委托模式为对象提供了一套接口，使其可由此将相关事件告知其他对象。
+将委托对象应该支持的接口定义成协议，在协议中把可能需要处理的事件定义成方法。
+当某对象需要从另外一个对象中获取数据时，可以使用委托模式。这种情境下，该模式亦称“数据源协议”（data source protocal）。
+若有必要
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-03T16:04:00.000Z" class="post-list__meta--date date">2018-01-04</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -221,7 +257,13 @@
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart3/" title="link to post.title">Effective Objective-C 2.0（第3章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计
+      编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计15.用前缀避免命名空间冲突
+选择与你的公司、应用程序或者二者皆有关联之名作为类名的前缀，并在所有代码中均使用这一前缀。
+若自己所开发的程序库中用到了第三方库，则应为其中的名称加上前缀。
+
+16.提供“全能初始化方法”
+在类中提供一个全能初始化方法，并于文档里指明。其他初始化方法均应调用此方法。
+若全能初始化方法与超类不同，则需
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-02T16:03:00.000Z" class="post-list__meta--date date">2018-01-03</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -235,7 +277,9 @@
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart2/" title="link to post.title">Effective Objective-C 2.0（第2章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第2章 对象、消息、运行期
+      编写高质量iOS与OS X代码的52个有效方法第2章 对象、消息、运行期6.理解“属性”这一概念使用属性，编译器会自动编写访问这些属性所需要的方法，这个过程由编译器在编译期执行。除了生成方法代码外，编译器还会自动向类中添加适当类型的实例变量，并且在属性名前面加下划线。
+可以使用 @synthesize 语法来指定实例变量的名字。
+@dynamic 关键字会告诉编译器：不要自动创建实现属性所用的实例
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-01T16:02:00.000Z" class="post-list__meta--date date">2018-01-02</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -249,7 +293,7 @@
       <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart1/" title="link to post.title">Effective Objective-C 2.0（第1章）</a></h2>
       <p class="excerpt">
     
-      编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C
+      编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C1.了解Objective-C 语言的起源Objective-C使用消息结构messaging structure，而非函数调用function calling。消息结构：运行时所运行的代码是由运行环境决定的。运行时才会去查找所要执行的方法。函数调用：编译器决定。Objective-C是C语言的超集，使用动态绑定的消息
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2017-12-31T16:01:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -260,10 +304,11 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/RunloopSummary/" title="link to post.title">RunLoop总结</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/RunloopSummary/" title="link to post.title">【iOS 开发】RunLoop总结</a></h2>
       <p class="excerpt">
     
-      Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。
+      Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。作用：接受循环事件和安排线程的工作。目的：让线程在有任务的时候忙于工作，而没有任务的时候处于休眠状态。
+RunLoop概念Runloop运行循环iOS中通常所说的Runloop指的是NSRunloop（Foundation框架）或者CFRunloopRef（CoreFoundation框架），CFRu
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2017-04-25T16:00:00.000Z" class="post-list__meta--date date">2017-04-26</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -274,31 +319,24 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/RuntimeSummary/" title="link to post.title">Runtime总结</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/RuntimeSummary/" title="link to post.title">【iOS 开发】Runtime总结</a></h2>
       <p class="excerpt">
     
-      一、Runtime是什么？
+      一、Runtime是什么？Runtime 运行时，就是系统在运行的时候的一些机制，其中最主要的是消息机制。Runtime 基本是用C和汇编编写的。
+OC与C语言在函数调用上的区别：C语言：
+
+函数的调用在编译的时候就决定调用哪个函数，编译完成之后直接顺序执行，无任何二义性。
+C语言在编译阶段调用未实现的函数就会报错。
+
+OC：
+
+函数的调用称为消息发送。属于动态调用过程。
+在编译的时候并不能决定真
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2017-04-23T16:00:00.000Z" class="post-list__meta--date date">2017-04-24</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
 </span><a class="btn-border-small" href="/RuntimeSummary/">阅读全文</a></div>
-      <hr class="post-list__divider">
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/MarkdownUsage/" title="link to post.title">Markdown常用语法</a></h2>
-      <p class="excerpt">
-    
-      
-Markdown常用语法
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2015-12-31T16:00:00.000Z" class="post-list__meta--date date">2016-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/Markdown/">Markdown</a>
-</span><a class="btn-border-small" href="/MarkdownUsage/">阅读全文</a></div>
       <hr class="post-list__divider">
     </li>
   

@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -172,8 +174,7 @@
   </header>
 
   <section class="post">
-    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第1章-熟悉Objective-C"><a href="#第1章-熟悉Objective-C" class="headerlink" title="第1章 熟悉Objective-C"></a>第1章 熟悉Objective-C</h3><a id="more"></a>
-<h4 id="1-了解Objective-C-语言的起源"><a href="#1-了解Objective-C-语言的起源" class="headerlink" title="1.了解Objective-C 语言的起源"></a>1.了解Objective-C 语言的起源</h4><p>Objective-C使用消息结构messaging structure，而非函数调用function calling。<br>消息结构：运行时所运行的代码是由运行环境决定的。运行时才会去查找所要执行的方法。<br>函数调用：编译器决定。<br>Objective-C是C语言的超集，使用动态绑定的消息结构，在运行时才会检查对象类型。接收到一条消息后，究竟该执行何种代码，由运行时环境而非编译器决定。<br>对象所占内存总是分配在堆上。</p>
+    <h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第1章-熟悉Objective-C"><a href="#第1章-熟悉Objective-C" class="headerlink" title="第1章 熟悉Objective-C"></a>第1章 熟悉Objective-C</h3><h4 id="1-了解Objective-C-语言的起源"><a href="#1-了解Objective-C-语言的起源" class="headerlink" title="1.了解Objective-C 语言的起源"></a>1.了解Objective-C 语言的起源</h4><p>Objective-C使用消息结构messaging structure，而非函数调用function calling。<br>消息结构：运行时所运行的代码是由运行环境决定的。运行时才会去查找所要执行的方法。<br>函数调用：编译器决定。<br>Objective-C是C语言的超集，使用动态绑定的消息结构，在运行时才会检查对象类型。接收到一条消息后，究竟该执行何种代码，由运行时环境而非编译器决定。<br>对象所占内存总是分配在堆上。</p>
 <h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5><ul>
 <li>Objective-C 为C语言添加了面向对象特性，是其超集。Objective-C 使用动态绑定的消息结构，也就是说，在运行时才会检查对象类型。接受一条消息之后，究竟应执行何种代码，由运行期环境而非编译器来决定。</li>
 <li>理解C语言的核心概念有助于写好Objective-C程序。尤其要掌握内存模型与指针。</li>
@@ -215,7 +216,8 @@
                 <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart2/" title="Effective Objective-C 2.0（第2章）">Effective Objective-C 2.0（第2章）</a></h2>
                 <p class="excerpt">
                 
-                编写高质量iOS与OS X代码的52个有效方法第2章 对象、消息、运行期
+                编写高质量iOS与OS X代码的52个有效方法第2章 对象、消息、运行期6.理解“属性”这一概念使用属性，编译器会自动编写访问这些属性所需要的方法，这个过程由编译器在编译期执行。除了生成方法代码外，编译器还会自动向类中添加适当类型的实例变量，并且在属性名前面加下划线。
+可以使用 @synthesiz
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-01T16:02:00.000Z" class="post-list__meta--date date">2018-01-02</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -228,10 +230,11 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/RunloopSummary/" title="RunLoop总结">RunLoop总结</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/RunloopSummary/" title="【iOS 开发】RunLoop总结">【iOS 开发】RunLoop总结</a></h2>
                 <p class="excerpt">
                 
-                Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。
+                Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。作用：接受循环事件和安排线程的工作。目的：让线程在有任务的时候忙于工作，而没有任务的时候处于休眠状态。
+RunLoop概念Runloop运行循环iOS中通常所说的Runloop指的是NSRunloop（
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2017-04-25T16:00:00.000Z" class="post-list__meta--date date">2017-04-26</time> &#8226; <span class="post-list__meta--tags tags">于 

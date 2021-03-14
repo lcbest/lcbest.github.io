@@ -61,7 +61,7 @@
         <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
         <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
         
-        <span class="panel-cover__subtitle panel-subtitle">不以物喜，不以己悲。</span>
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
         
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">iOS developer</p>
@@ -75,7 +75,9 @@
             
               <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
             
-              <li class="navigation__item"><a href="https://objc.vip">ObjC</a></li>
+              <li class="navigation__item"><a href="https://blog.csdn.net/pass7580">CSDN</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
             
             </ul>
           </nav>
@@ -172,7 +174,7 @@
   </header>
 
   <section class="post">
-    <p>使用环信实现聊天的过程遇到了一些坑，记录一下避免自己和其他人踩坑或者尽快出坑。<br><a id="more"></a></p>
+    <p>使用环信实现聊天的过程遇到了一些坑，记录一下避免自己和其他人踩坑或者尽快出坑。</p>
 <h2 id="问题1-聊天页面环信工具栏向上偏移"><a href="#问题1-聊天页面环信工具栏向上偏移" class="headerlink" title="问题1 聊天页面环信工具栏向上偏移"></a>问题1 聊天页面环信工具栏向上偏移</h2><h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>在聊天页面，点击输入框弹起键盘，点击<code>IQKeyboardManager</code>带的完成按钮或者点击空白页面收起键盘，反复操作多次后，会出现页面向上偏移，环信<code>UI</code>的工具栏移动到了页面最上边。</p>
 <h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><p>在聊天页面禁用<code>IQKeyboardManager</code>。<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)viewDidAppear:(<span class="built_in">BOOL</span>)animated</span><br><span class="line">&#123;</span><br><span class="line">    [<span class="keyword">super</span> viewDidAppear:animated];</span><br><span class="line">    IQKeyboardManager *keyboardManager =  [IQKeyboardManager sharedManager];</span><br><span class="line">    keyboardManager.enable = <span class="literal">NO</span>;</span><br><span class="line">    keyboardManager.enableAutoToolbar = <span class="literal">NO</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewWillDisappear:(<span class="built_in">BOOL</span>)animated</span><br><span class="line">&#123;</span><br><span class="line">    [<span class="keyword">super</span> viewWillDisappear:animated];</span><br><span class="line">    IQKeyboardManager *keyboardManager =  [IQKeyboardManager sharedManager];</span><br><span class="line">    keyboardManager.enable = <span class="literal">YES</span>;</span><br><span class="line">    keyboardManager.enableAutoToolbar = <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="问题2-保存环信昵称头像到数据库失败"><a href="#问题2-保存环信昵称头像到数据库失败" class="headerlink" title="问题2 保存环信昵称头像到数据库失败"></a>问题2 保存环信昵称头像到数据库失败</h2><h3 id="问题描述：-1"><a href="#问题描述：-1" class="headerlink" title="问题描述："></a>问题描述：</h3><p>环信服务器不存储用户的昵称头像等用户数据。需要客户端自己来存储并展示在界面上。有几个时机是需要插入或更新一条包含昵称、头像的用户数据到数据库里，比如查看用户详情，在某个页面收到环信消息。我们服务器提供的查询用户信息接口返回的昵称和头像，之前是没有问题的，有一次出现了从用户信息界面进入聊天页面不显示昵称的问题。</p>
@@ -212,6 +214,10 @@
                 <p class="excerpt">
                 
                 第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。
+栈的定义
+栈（stack）是限定仅在表尾进行插入和删除操作的线性表。
+
+我们把允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何数据元素的栈称为
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2019-09-08T14:58:00.000Z" class="post-list__meta--date date">2019-09-08</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -228,6 +234,11 @@
                 <p class="excerpt">
                 
                 第3章 线性表线性表：零个或多个数据元素的有限序列。
+线性表的定义
+线性表(List):零个或多个数据元素的有限序列。
+
+线性表元素的个数 n (n&amp;gt;=0) 定义为线性表的长度，当 n = 0时，称为空表。
+线性表的抽象数据类型ADT 线性表(List)Data​    线性表的数据对象集合为
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2019-05-29T09:46:00.000Z" class="post-list__meta--date date">2019-05-29</time> &#8226; <span class="post-list__meta--tags tags">于 
