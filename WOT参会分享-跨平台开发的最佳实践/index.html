@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta name="google-site-verification" content="NaIIcXnJZ31tpKODfIa1yirG6EC32zDyxSbJVLVbef0" />
+    <meta name="baidu-site-verification" content="qmiYS1v08K" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>【前端】WOT参会分享-跨平台开发的最佳实践 | Chance</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS developer">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="【前端】WOT参会分享-跨平台开发的最佳实践 | Chance">
+    <meta name="twitter:description" content="iOS developer">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="【前端】WOT参会分享-跨平台开发的最佳实践 | Chance">
+    <meta property="og:description" content="iOS developer">
+
+    
+    <meta name="author" content="Chance">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Chance" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://chanceli.com/WOT参会分享-跨平台开发的最佳实践/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Chance 的主页"><img src="/images/avatar.jpg" width="80" alt="Chance logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Chance">Chance</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, stay foolish.</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">iOS developer</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="https://www.jianshu.com/u/79e2c989affa">简书</a></li>
+            
+              <li class="navigation__item"><a href="/about/">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/lcbest" title="查看我的GitHub主页" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  <li class="navigation__item">
+    <a href="https://www.facebook.com/lichangpro" title="上Facebook找我" target="_blank">
+      <i class="social fa fa-facebook"></i>
+      <span class="label">Facebook</span>
+    </a>
+  </li>
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/pass7580" title="上Twitter找我" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+  <li class="navigation__item">
+    <a href="mailto:lc@chanceli.com" title="邮件联系我" target="_blank">
+      <i class="social fa fa-envelope"></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-disabled"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2023-07-05T04:37:00.000Z" class="post-list__meta--date date">2023-07-05</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/前端/">前端</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">【前端】WOT参会分享-跨平台开发的最佳实践</h1>
+  </header>
+
+  <section class="post">
+    <p>分享人：<code>uni-app</code> 产品负责人、<code>DCloud</code> CTO</p>
+<h1 id="1-跨平台框架如何选型？"><a href="#1-跨平台框架如何选型？" class="headerlink" title="1.跨平台框架如何选型？"></a>1.跨平台框架如何选型？</h1><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=47eb2abef2ae4ed3874d8ad2d9c3b530&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=fd59783f06334ff08b88186e6ef47b24&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p>1.提升人效</p>
+<p>2.抹平差异</p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=3a95496fcccd441d8336c82348544b0c&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="跨端框架的技术方向"><a href="#跨端框架的技术方向" class="headerlink" title="跨端框架的技术方向"></a>跨端框架的技术方向</h2><h3 id="方向1：偏前端"><a href="#方向1：偏前端" class="headerlink" title="方向1：偏前端"></a>方向1：偏前端</h3><p>基于<code>WebView</code>的增强</p>
+<p>1.<code>ionic</code></p>
+<p>2.<code>CORDOVA Hybrid</code>框架</p>
+<p>3.<code>SONIC</code> 客户端预加载<code>WebView</code>资源</p>
+<p>4.小程序（<code>WebView</code>）</p>
+<p>5.离线包方案<code>App</code>厂商对<code>Web</code>做的离线包方案</p>
+<p>特点：</p>
+<p>1.基于<code>WebView</code>渲染，补充了一些原生能力的增强</p>
+<p>2.开发生态基于 <code>Web</code> 前端生态</p>
+<p>3.想方设法增强<code>Web</code>的用户体验</p>
+<h3 id="方向2：偏客户端"><a href="#方向2：偏客户端" class="headerlink" title="方向2：偏客户端"></a>方向2：偏客户端</h3><p>基于<code>DSL</code>的<code>Native</code>增强</p>
+<p>(<code>DSL</code>:<code>Domain-specific language</code> 领域特定语言是专门针对特定应用程序领域的计算机语言)</p>
+<p>1.<code>DinamicX</code> 手淘无障碍框架</p>
+<p>2.<code>Tangram</code> 阿里七巧板</p>
+<p>3.<code>Jasonette</code></p>
+<p>4.<code>DreamBox</code></p>
+<p>5.<code>MTFlexbox</code> 美团</p>
+<p><code>MTFlexbox</code>首先定义一份跨平台统一的<code>DSL</code>布局描述文件，前端通过“所见即所得”的编辑器编辑产生布局，客户端下载布局文件后，根据布局中的描述绑定<code>JSON</code>数据，并最终完成视图的渲染。</p>
+<p>特点：</p>
+<p>1.开发生态基于<code>Native</code>，框架设计参考<code>WebView</code>的一些特性</p>
+<p>2.自定义<code>DSL</code>来实现跨端与动态化</p>
+<p>设计的像<code>React Native</code></p>
+<h3 id="方向3：代码共享-Kotlin-Multiplatform"><a href="#方向3：代码共享-Kotlin-Multiplatform" class="headerlink" title="方向3：代码共享 Kotlin Multiplatform"></a>方向3：代码共享 <code>Kotlin Multiplatform</code></h3><p><code>KKM</code> <code>Kotlin Multiplatform Mobile</code> 代码共享</p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=d4955d65a6374bd8ae201a5636d0fbd9&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p>跨端代码 <code>Shared module</code></p>
+<p>壳工程 <code>Android/iOS App</code></p>
+<h3 id="方向4：大终端"><a href="#方向4：大终端" class="headerlink" title="方向4：大终端"></a>方向4：大终端</h3><p>基于<code>GPL</code>的<code>Native</code>增强</p>
+<p>(<code>GPL</code>: <code>General Public License</code>  通用公共许可证)</p>
+<p>1.<code>Native Widget</code> 原生渲染组件</p>
+<p><code>React Native</code> / <code>Hippy</code> 1.0 / <code>Weex</code> 1.0</p>
+<p>2.自绘引擎 <code>Flutter</code></p>
+<p>3.基于<code>Flutter</code>的自绘框架</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">webF`，`Kraken`, `Kun`, `Skyline</span><br></pre></td></tr></table></figure>
+<p>4.基于系统图形库（<code>Skia</code>(Google出的图形处理引擎) / <code>OpenGL</code>(开放图形库) / <code>Vulkan</code> / <code>Metal</code>）的自绘框架</p>
+<p><code>TDF</code>(Tencent Dynamic Framework), <code>Hippy</code> 3.0, <code>Weex</code> 2.0, <code>MagicBrash</code>, <code>Waft</code>(WebAssembly Framework for Things)</p>
+<p><code>Waft</code>(WebAssembly Framework for Things)</p>
+<p>AloT的尝试</p>
+<p>1.Android App: 运存太低，性能受限</p>
+<p>2.Waft</p>
+<p><code>Waft</code>构成：</p>
+<p>1.脚本引擎：<code>WebAssembly</code></p>
+<p>2.渲染引擎：<code>Skia</code>封装</p>
+<h2 id="跨端框架的技术要点"><a href="#跨端框架的技术要点" class="headerlink" title="跨端框架的技术要点"></a>跨端框架的技术要点</h2><h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><h4 id="1-动态化"><a href="#1-动态化" class="headerlink" title="1.动态化"></a>1.动态化</h4><ul>
+<li>基于<code>WebView</code>的增强</li>
+<li>基于<code>DSL</code>的<code>Native</code>增强</li>
+<li>基于<code>GPL</code>的<code>Native</code>增强</li>
+<li>插件化（<code>Android</code>）</li>
+<li>利用<code>OC</code>运行时动态化特性（<code>iOS</code>）</li>
+</ul>
+<h4 id="2-loT"><a href="#2-loT" class="headerlink" title="2.loT"></a>2.loT</h4><h4 id="3-Desktop"><a href="#3-Desktop" class="headerlink" title="3.Desktop"></a>3.Desktop</h4><h4 id="4-车机"><a href="#4-车机" class="headerlink" title="4.车机"></a>4.车机</h4><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=f8d14ce4abe14d17b1fb7437ac034a38&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h3 id="技术要点"><a href="#技术要点" class="headerlink" title="技术要点"></a>技术要点</h3><h4 id="1-脚本引擎"><a href="#1-脚本引擎" class="headerlink" title="1.脚本引擎"></a>1.脚本引擎</h4><ul>
+<li><code>JS</code>引擎：双引擎（<code>JSCore</code> + <code>V8</code>）、单引擎（<code>Hermes</code>）、单引擎（<code>QuickJS</code>）、单引擎（自研<code>JS</code>引擎）</li>
+<li><code>DartVM</code>：利用<code>Flutter Engine</code></li>
+<li><code>WARM</code>：需要设计<code>DSL</code>和实现渲染引擎</li>
+</ul>
+<h4 id="2-渲染引擎"><a href="#2-渲染引擎" class="headerlink" title="2.渲染引擎"></a>2.渲染引擎</h4><ul>
+<li>基于 <code>Flutter Engine</code></li>
+<li>基于系统图形库 <code>Skia</code> / <code>OpenGL</code> / <code>Vulkun</code> / <code>Metal</code></li>
+</ul>
+<h4 id="3-调试器"><a href="#3-调试器" class="headerlink" title="3. 调试器"></a>3. 调试器</h4><p><code>Debugger</code>：一种可以让 <code>JavaScript Runtime</code> 进行中断，并可以实时查看内部运行状态的应用</p>
+<p>调试协议：</p>
+<ul>
+<li><code>CDP</code>: <code>Chrome DevTools Protocol</code></li>
+<li><code>DAP</code>: <code>Debug Adapter Protocol</code></li>
+<li>自建协议：微信小程序早期</li>
+</ul>
+<h4 id="4-工程化"><a href="#4-工程化" class="headerlink" title="4.工程化"></a>4.工程化</h4><ul>
+<li>资源加载方案</li>
+<li>降级处理</li>
+<li>版本管理</li>
+<li>研发模式</li>
+</ul>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=a241fca4248548308d2613ccbc53f338&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=2af8081f0f584e4c82778ca0c08ef64b&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h1 id="2-跨平台框架的共性问题"><a href="#2-跨平台框架的共性问题" class="headerlink" title="2.跨平台框架的共性问题"></a>2.跨平台框架的共性问题</h1><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=98ff085acb4c483fb42d9223aa900e00&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=1d0a150f06a3443cb57a84ae1625efc4&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=75b5b4be6df744389aaf52fe224e1d7d&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h1 id="3-UTS-纯原生跨平台框架"><a href="#3-UTS-纯原生跨平台框架" class="headerlink" title="3.UTS: 纯原生跨平台框架"></a>3.UTS: 纯原生跨平台框架</h1><p>UTS官方文档：<a href="https://uniapp.dcloud.net.cn/tutorial/syntax-uts.html" target="_blank" rel="noopener">https://uniapp.dcloud.net.cn/tutorial/syntax-uts.html</a></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=43cbf9e8a6d844918125c07935fa64b7&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=402c58e6d7c84743a41a39c43986cce1&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=d98f77f48d334ac5b9ecf2214365173d&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=c8c7717b0789421293780be94015e4ac&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="类、函数"><a href="#类、函数" class="headerlink" title="类、函数"></a>类、函数</h2><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=b11cdf8001ec4f6ba7c5bbecfe6a18ef&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p>框架设计就是追求取舍平衡的过程</p>
+<p>uts是对ts的定制，有删有增有重定义</p>
+<h2 id="运行时"><a href="#运行时" class="headerlink" title="运行时"></a>运行时</h2><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=455cac5c0e9740529c9d6fca5882811a&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=84a63842316f4cd8af14aa797c36fa66&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=c1059582019141cb9735388c4404194a&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h1 id="4-云端一体，跨端之上的最佳实践"><a href="#4-云端一体，跨端之上的最佳实践" class="headerlink" title="4.云端一体，跨端之上的最佳实践"></a>4.云端一体，跨端之上的最佳实践</h1><p>改善前后端协同，赋能前端，加速业务</p>
+<h2 id="协作模式"><a href="#协作模式" class="headerlink" title="协作模式"></a>协作模式</h2><p>协作模式改变，更少代码，更高效率</p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=ae90af459f0d4f2e80253107b7233c75&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=4871c441738a4d4e8ea68ec711c338fc&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=8103eced37da434fb54d89cb2b8d9b98&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=b2070635efa6414f808424b58d180de7&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=d10e4da22db24ed3a7f5245fc4af245e&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="代码生成"><a href="#代码生成" class="headerlink" title="代码生成"></a>代码生成</h2><p>业务抽象schema，一键生成前后端代码</p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=de1fd32b43624771a8612966855f3e54&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h2><p>组件支持SSR，降低SSR门槛</p>
+<h3 id="什么是SSR"><a href="#什么是SSR" class="headerlink" title="什么是SSR"></a>什么是SSR</h3><p>SSR：Server Side Render 是一种将服务端渲染和客户端渲染结合起来的技术，它可以在服务端生成HTML代码，并将其发送到浏览器端。</p>
+<p>SPA：Single Page Application 单页面应用，一般也成为客户端渲染 CSR（Client Side Render）</p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=97302ab64aa3420087265abf96da94be&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=e74a50e5c824409dbf71a3f220bda601&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p>SPA存在的问题：</p>
+<ul>
+<li>首屏加载满，加载大量的JavaScript和CSS文件</li>
+<li>SEO不友好，搜索引擎无法直接抓取页面内容</li>
+<li>内存占用高，会在内存中缓存大量数据</li>
+</ul>
+<p>SSR优点：</p>
+<ul>
+<li>性能好，首屏加载速度快</li>
+<li>更好的SEO</li>
+<li>更好的用户体验</li>
+<li>更易于维护</li>
+</ul>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=dba7fe44ab5643ca8a547765d30c5c07&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=fd735aa5f24c452e8b690c94af6593c2&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=6d69da9709c44cdeb42b0cd72f4268d1&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=acd8dbd48ba44666850c5d8aa2f558e2&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<h2 id="轮子生态"><a href="#轮子生态" class="headerlink" title="轮子生态"></a>轮子生态</h2><p>云端一体轮子，聚焦业务</p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=14ecd58e3dff4c099e906837d67e63f5&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+<p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=5f805faf3b3249ed8a2fa4f038461be1&amp;docGuid=TNXV8uz7miSiHS" alt="img"></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/nvm安装方法/" title="【前端】nvm安装方法">【前端】nvm安装方法</a></h2>
+                <p class="excerpt">
+                
+                背景nvm可以管理node版本，使用homebrew安装nvm后，nvm -v查看版本提示
+zsh: command not found: nvm
+解决方案1.使用homebrew安装nvm1brew install nvm
+2.如果~/.nvm不存在，创建文件夹1mkdir ~/.nvm
+3.配置
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2023-07-19T02:42:00.000Z" class="post-list__meta--date date">2023-07-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/前端/">前端</a>
+</span><a class="btn-border-small" href="/nvm安装方法/">阅读全文</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/微信小程序开发遇到的问题/" title="【小程序】微信小程序开发遇到的问题">【小程序】微信小程序开发遇到的问题</a></h2>
+                <p class="excerpt">
+                
+                问题1 体验版怎么访问域名不支持https 带端口号的线下环境点击右上角三个点-点击“开发调试”，即可访问域名不支持https 带端口号的线下环境
+
+问题2 体验版怎么查看日志，清除缓存打开“开发调试”后，点击vConsole，可以查看log，清除storage等
+
+问题3 怎么找页面路径
+
+
+问题
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2023-03-08T04:42:00.000Z" class="post-list__meta--date date">2023-03-08</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/小程序/">小程序</a>
+</span><a class="btn-border-small" href="/微信小程序开发遇到的问题/">阅读全文</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+    <span class="footer__copyright">
+        &copy; 2023 Chance - All rights reserved.
+       
+    </span>
+    <span class="footer__copyright">
+            
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-130581623-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1fd71bc196ee52d6ace3860b092024e4";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
+</body>
+</html>

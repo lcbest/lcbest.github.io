@@ -162,6 +162,94 @@
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart3/" title="link to post.title">Effective Objective-C 2.0（第3章）</a></h2>
+      <p class="excerpt">
+    
+      编写高质量iOS与OS X代码的52个有效方法第3章 接口与API设计15.用前缀避免命名空间冲突
+选择与你的公司、应用程序或者二者皆有关联之名作为类名的前缀，并在所有代码中均使用这一前缀。
+若自己所开发的程序库中用到了第三方库，则应为其中的名称加上前缀。
+
+16.提供“全能初始化方法”
+在类中提供一个全能初始化方法，并于文档里指明。其他初始化方法均应调用此方法。
+若全能初始化方法与超类不同，则需
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-01-02T16:03:00.000Z" class="post-list__meta--date date">2018-01-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/EffectiveObjectiveCPart3/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart2/" title="link to post.title">Effective Objective-C 2.0（第2章）</a></h2>
+      <p class="excerpt">
+    
+      编写高质量iOS与OS X代码的52个有效方法第2章 对象、消息、运行期6.理解“属性”这一概念使用属性，编译器会自动编写访问这些属性所需要的方法，这个过程由编译器在编译期执行。除了生成方法代码外，编译器还会自动向类中添加适当类型的实例变量，并且在属性名前面加下划线。
+可以使用 @synthesize 语法来指定实例变量的名字。
+@dynamic 关键字会告诉编译器：不要自动创建实现属性所用的实例
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-01-01T16:02:00.000Z" class="post-list__meta--date date">2018-01-02</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/EffectiveObjectiveCPart2/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/EffectiveObjectiveCPart1/" title="link to post.title">Effective Objective-C 2.0（第1章）</a></h2>
+      <p class="excerpt">
+    
+      编写高质量iOS与OS X代码的52个有效方法第1章 熟悉Objective-C1.了解Objective-C 语言的起源Objective-C使用消息结构messaging structure，而非函数调用function calling。消息结构：运行时所运行的代码是由运行环境决定的。运行时才会去查找所要执行的方法。函数调用：编译器决定。Objective-C是C语言的超集，使用动态绑定的消息
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2017-12-31T16:01:00.000Z" class="post-list__meta--date date">2018-01-01</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Effective-Objective-C-2-0/">Effective Objective-C 2.0</a>
+</span><a class="btn-border-small" href="/EffectiveObjectiveCPart1/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/RunloopSummary/" title="link to post.title">【iOS 开发】RunLoop总结</a></h2>
+      <p class="excerpt">
+    
+      Runloops是线程相关底层基础的一部分。它的本质和字面意思一样运行着的循环（事件处理的循环）。作用：接受循环事件和安排线程的工作。目的：让线程在有任务的时候忙于工作，而没有任务的时候处于休眠状态。
+RunLoop概念Runloop运行循环iOS中通常所说的Runloop指的是NSRunloop（Foundation框架）或者CFRunloopRef（CoreFoundation框架），CFRu
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2017-04-25T16:00:00.000Z" class="post-list__meta--date date">2017-04-26</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+</span><a class="btn-border-small" href="/RunloopSummary/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/RuntimeSummary/" title="link to post.title">【iOS 开发】Runtime总结</a></h2>
+      <p class="excerpt">
+    
+      一、Runtime是什么？Runtime 运行时，就是系统在运行的时候的一些机制，其中最主要的是消息机制。Runtime 基本是用C和汇编编写的。
+OC与C语言在函数调用上的区别：C语言：
+
+函数的调用在编译的时候就决定调用哪个函数，编译完成之后直接顺序执行，无任何二义性。
+C语言在编译阶段调用未实现的函数就会报错。
+
+OC：
+
+函数的调用称为消息发送。属于动态调用过程。
+在编译的时候并不能决定真
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2017-04-23T16:00:00.000Z" class="post-list__meta--date date">2017-04-24</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
+</span><a class="btn-border-small" href="/RuntimeSummary/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/MarkdownUsage/" title="link to post.title">Markdown常用语法</a></h2>
       <p class="excerpt">
     
