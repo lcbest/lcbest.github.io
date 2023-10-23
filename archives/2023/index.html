@@ -207,6 +207,25 @@ zsh: command not found: nvm
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/小程序web化遇到的一些问题/" title="link to post.title">【小程序】百度小程序web化遇到的一些问题</a></h2>
+      <p class="excerpt">
+    
+      1.开启直连发起请求增加参数
+1baiduCORS: true,
+原因：web化需要开启直连请求，目前只有线上域名开启了直连，测试环境也需要开启，否则可能会报跨域错误
+2.生成web化需要改成http操作步骤：预览-Web态预览-在浏览器中预览，然后在浏览器中的链接把https改为http
+原因：线下环境是http的，网址也需要是http，否则会报mix-content错误
+3.链接域名需要是*.
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2023-03-20T03:03:00.000Z" class="post-list__meta--date date">2023-03-20</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/小程序/">小程序</a>
+</span><a class="btn-border-small" href="/小程序web化遇到的一些问题/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/微信小程序开发遇到的问题/" title="link to post.title">【小程序】微信小程序开发遇到的问题</a></h2>
       <p class="excerpt">
     

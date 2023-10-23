@@ -207,6 +207,25 @@ zsh: command not found: nvm
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/小程序web化遇到的一些问题/" title="link to post.title">【小程序】百度小程序web化遇到的一些问题</a></h2>
+      <p class="excerpt">
+    
+      1.开启直连发起请求增加参数
+1baiduCORS: true,
+原因：web化需要开启直连请求，目前只有线上域名开启了直连，测试环境也需要开启，否则可能会报跨域错误
+2.生成web化需要改成http操作步骤：预览-Web态预览-在浏览器中预览，然后在浏览器中的链接把https改为http
+原因：线下环境是http的，网址也需要是http，否则会报mix-content错误
+3.链接域名需要是*.
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2023-03-20T03:03:00.000Z" class="post-list__meta--date date">2023-03-20</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/小程序/">小程序</a>
+</span><a class="btn-border-small" href="/小程序web化遇到的一些问题/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/微信小程序开发遇到的问题/" title="link to post.title">【小程序】微信小程序开发遇到的问题</a></h2>
       <p class="excerpt">
     
@@ -342,25 +361,6 @@ n&amp;lt;m，且ai=bi（i=1, 2, ……, n）。
       <div class="post-list__meta"><time datetime="2019-09-10T14:24:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
 </span><a class="btn-border-small" href="/DataStructurePart4/">阅读全文</a></div>
-      <hr class="post-list__divider">
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/优化iOS安装包大小/" title="link to post.title">【iOS 开发】优化 iOS 安装包大小</a></h2>
-      <p class="excerpt">
-    
-      最近优化了一下我负责的两个App ipa 包大小，记录一下优化方法。
-App1:优化前：37.8MB 优化后：15.7MB
-
-移除重复图片，多余图片，压缩大的图片，去掉用不到的类。包大小变为35.1MB，减少了2.7MB。
-把环信含音视频的 SDK 换成不含音视频的 SDK。包大小变为28MB，减少了7.1MB。
-移除 armv7，不再支持 iPhone 4、iPhone 4s。包大小变为20.4
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2019-09-09T16:00:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
-</span><a class="btn-border-small" href="/优化iOS安装包大小/">阅读全文</a></div>
       <hr class="post-list__divider">
     </li>
   

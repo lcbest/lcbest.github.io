@@ -69,6 +69,32 @@
   </entry>
   
   <entry>
+    <title>【小程序】百度小程序web化遇到的一些问题</title>
+    <link href="http://chanceli.com/%E5%B0%8F%E7%A8%8B%E5%BA%8Fweb%E5%8C%96%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/"/>
+    <id>http://chanceli.com/小程序web化遇到的一些问题/</id>
+    <published>2023-03-20T03:03:00.000Z</published>
+    <updated>2023-10-23T08:16:50.278Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-开启直连"><a href="#1-开启直连" class="headerlink" title="1.开启直连"></a>1.开启直连</h2><p>发起请求增加参数</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baiduCORS: true,</span><br></pre></td></tr></table></figure><p>原因：web化需要开启直连请求，目前只有线上域名开启了直连，测试环境也需要开启，否则可能会报跨域错误</p><h2 id="2-生成web化需要改成http"><a href="#2-生成web化需要改成http" class="headerlink" title="2.生成web化需要改成http"></a>2.生成web化需要改成http</h2><p>操作步骤：预览-Web态预览-在浏览器中预览，然后在浏览器中的链接把https改为http</p><p>原因：线下环境是http的，网址也需要是http，否则会报mix-content错误</p><h2 id="3-链接域名需要是-smartapps-baidu-com-而非-smartapps-cn"><a href="#3-链接域名需要是-smartapps-baidu-com-而非-smartapps-cn" class="headerlink" title="3.链接域名需要是*.smartapps.baidu.com  而非*.smartapps.cn"></a>3.链接域名需要是<code>*.smartapps.baidu.com</code>  而非<code>*.smartapps.cn</code></h2><p>示例：</p><p>正确：<a href="https://i0wpll.smartapps.baidu.com/sub-others/pages/course-agreement/course-agreement" target="_blank" rel="noopener">https://i0wpll.smartapps.baidu.com/sub-others/pages/course-agreement/course-agreement</a></p><p>错误：<a href="https://i0wpll.smartapps.cn/sub-others/pages/course-agreement/course-agreement" target="_blank" rel="noopener">https://i0wpll.smartapps.cn/sub-others/pages/course-agreement/course-agreement</a></p><p>原因：*.smartapps.cn   webmapp/api/v1/check_session 获取登录状态异常，会提示用户未登录</p><h2 id="4-链接里的-amp-swebfr-1需要去掉"><a href="#4-链接里的-amp-swebfr-1需要去掉" class="headerlink" title="4.链接里的&amp;_swebfr=1需要去掉"></a>4.链接里的&amp;_swebfr=1需要去掉</h2><p>链接里的&amp;_swebfr=1需要去掉或改成&amp;_swebfr=22，控制是否带</p><p>示例：</p><p>正确：<a href="https://i0wpll.smartapps.baidu.com/sub-others/pages/course-agreement/course-agreement" target="_blank" rel="noopener">https://i0wpll.smartapps.baidu.com/sub-others/pages/course-agreement/course-agreement</a></p><p>错误：<a href="https://i0wpll.smartapps.baidu.com/sub-others/pages/course-agreement/course-agreement?_swebfr=0" target="_blank" rel="noopener">https://i0wpll.smartapps.baidu.com/sub-others/pages/course-agreement/course-agreement?_swebfr=0</a></p><p>原因：_swebfr=1会带“在百度APP内打开”，如果改为_swebfr=0，跳转链接会跳不过去，UI也可能异常</p><p><img src="https://rte.weiyun.baidu.com/wiki/attach/image/api/imageDownloadAddress?attachId=ce590bf4600a4e63999d7db637945d6d&amp;docGuid=Gor9pG7GoqzLGg" alt="img"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-开启直连&quot;&gt;&lt;a href=&quot;#1-开启直连&quot; class=&quot;headerlink&quot; title=&quot;1.开启直连&quot;&gt;&lt;/a&gt;1.开启直连&lt;/h2&gt;&lt;p&gt;发起请求增加参数&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
+      
+    
+    </summary>
+    
+      <category term="小程序" scheme="http://chanceli.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+      <category term="小程序" scheme="http://chanceli.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【小程序】微信小程序开发遇到的问题</title>
     <link href="http://chanceli.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://chanceli.com/微信小程序开发遇到的问题/</id>
@@ -494,31 +520,6 @@
     <updated>2021-03-14T13:47:11.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第5章-内存管理"><a href="#第5章-内存管理" class="headerlink" title="第5章 内存管理"></a>第5章 内存管理</h3><h4 id="29-理解引用计数"><a href="#29-理解引用计数" class="headerlink" title="29.理解引用计数"></a>29.理解引用计数</h4><ul><li>引用计数机制通过可以递增递减的计数器来管理内存。对象创建好之后，其保留计数至少为1。若保留计数为正，则对象继续存活。当保留计数降为0时，对象就被销毁了。</li><li>在对象的生命周期中，其余对象通过引用来保留或释放此对象。保留与释放操作分别会递增及递减保留计数。</li></ul><h4 id="30-以ARC简化引用计数"><a href="#30-以ARC简化引用计数" class="headerlink" title="30.以ARC简化引用计数"></a>30.以ARC简化引用计数</h4><ul><li>有ARC之后，程序员就无须担心内存管理问题了。使用ARC来编程，可以省去类中许多“样板代码”。</li><li>ARC管理对象生命期的办法基本上就是：在合适的地方插入“保留”及“释放”操作。在ARC环境下，变量的内存管理语义可以通过修饰符指明，而原来则需要手工执行“保留”及“释放”操作。</li><li>由方法所返回的对象，其内存管理语义总是通过方法名来体现。ARC将此确定为开发者必须遵守的规则。</li><li>ARC只负责管理Objective-C对象的内存。尤其要注意：CoreFoundation对象不归ARC管理，开发者必须适时调用CFRetain/CFRelease。</li></ul><h4 id="31-在dealloc方法中只释放引用并解除监听"><a href="#31-在dealloc方法中只释放引用并解除监听" class="headerlink" title="31.在dealloc方法中只释放引用并解除监听"></a>31.在dealloc方法中只释放引用并解除监听</h4><ul><li>在dealloc方法里，应该做的事情就是释放指向其他对象的引用，并取消原来订阅的“键值观察”(KVO)或NSNotificationCenter等通知，不要做其他事情。</li><li>如果对象持有文件描述符等系统资源，那么应该专门编写一个方法来释放此种资源。这样的类要和其使用者约定：用完资源后必须调用close方法。</li><li>执行异步任务的方法不应在dealloc里调用；只能在正常状态下执行的那些方法也不应在dealloc里调用，因为此时对象已处于正在回收的状态了。</li></ul><h4 id="32-编写“异常安全代码”时留意内存管理问题"><a href="#32-编写“异常安全代码”时留意内存管理问题" class="headerlink" title="32.编写“异常安全代码”时留意内存管理问题"></a>32.编写“异常安全代码”时留意内存管理问题</h4><ul><li>捕获异常时，一定要注意将try块内所创立的对象清理干净。</li><li>在默认情况下，ARC不生成安全处理异常所需的清理代码。开启编译器标志后，可生成这种代码，不过会导致应用程序变大，而且会降低运行效率。</li></ul><h4 id="33-以弱引用避免保留环"><a href="#33-以弱引用避免保留环" class="headerlink" title="33.以弱引用避免保留环"></a>33.以弱引用避免保留环</h4><ul><li>将某些引用设为weak，可避免出现“保留环”。</li><li>weak引用可以自动清空，也可以不自动清空。自动清空（autonilling）是随着ARC而引人的新特性，由运行期系统来实现。在具备自动清空功能的弱引用上，可以随意读取其数据，因为这种引用不会指向已经回收过的对象。</li></ul><h4 id="34-以“自动释放池块”降低内存峰值"><a href="#34-以“自动释放池块”降低内存峰值" class="headerlink" title="34.以“自动释放池块”降低内存峰值"></a>34.以“自动释放池块”降低内存峰值</h4><ul><li>自动释放池排布在栈中，对象收到autorelease消息后，系统将其放入最顶端的池里。</li><li>合理运用自动释放池，可降低应用程序的内存峰值。</li><li>@autoreleasepool这种新式写法能创建出更为轻便的自动释放池。</li></ul><h4 id="35-用“僵尸对象”调试内存管理问题"><a href="#35-用“僵尸对象”调试内存管理问题" class="headerlink" title="35.用“僵尸对象”调试内存管理问题"></a>35.用“僵尸对象”调试内存管理问题</h4><ul><li>系统在回收对象时，可以不将其真的回收，而是把它转化为僵尸对象。通过环境变量NSZombieEnabled可开启此功能。</li><li>系统会修改对象的isa指针，令其指向特殊的僵尸类，从而使该对象变为僵尸对象。僵尸类能够响应所有的选择子，响应方式为：打印一条包含消息内容及其接收者的消息，然后终止应用程序。</li></ul><h4 id="36-不要使用retainCount"><a href="#36-不要使用retainCount" class="headerlink" title="36.不要使用retainCount"></a>36.不要使用retainCount</h4><ul><li>对象的保留计数看似有用，实则不然，因为任何给定时间点上的“绝对保留计数”（absolute retain count）都无法反应对象生命周期的全貌。</li><li>引入ARC之后，retainCount方法就正式废止了，在ARC下调用该方法会导致编译器报错。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;编写高质量iOS与OS-X代码的52个有效方法&quot;&gt;&lt;a href=&quot;#编写高质量iOS与OS-X代码的52个有效方法&quot; class=&quot;headerlink&quot; title=&quot;编写高质量iOS与OS X代码的52个有效方法&quot;&gt;&lt;/a&gt;编写高质量iOS与OS X代码的5
-      
-    
-    </summary>
-    
-      <category term="Effective Objective-C 2.0" scheme="http://chanceli.com/categories/Effective-Objective-C-2-0/"/>
-    
-    
-      <category term="Effective Objective-C 2.0" scheme="http://chanceli.com/tags/Effective-Objective-C-2-0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Effective Objective-C 2.0（第4章）</title>
-    <link href="http://chanceli.com/EffectiveObjectiveCPart4/"/>
-    <id>http://chanceli.com/EffectiveObjectiveCPart4/</id>
-    <published>2018-01-03T16:04:00.000Z</published>
-    <updated>2021-03-14T13:47:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="编写高质量iOS与OS-X代码的52个有效方法"><a href="#编写高质量iOS与OS-X代码的52个有效方法" class="headerlink" title="编写高质量iOS与OS X代码的52个有效方法"></a>编写高质量iOS与OS X代码的52个有效方法</h2><h3 id="第4章-协议与分类"><a href="#第4章-协议与分类" class="headerlink" title="第4章 协议与分类"></a>第4章 协议与分类</h3><h4 id="23-通过委托与数据源协议进行对象间通信"><a href="#23-通过委托与数据源协议进行对象间通信" class="headerlink" title="23.通过委托与数据源协议进行对象间通信"></a>23.通过委托与数据源协议进行对象间通信</h4><ul><li>委托模式为对象提供了一套接口，使其可由此将相关事件告知其他对象。</li><li>将委托对象应该支持的接口定义成协议，在协议中把可能需要处理的事件定义成方法。</li><li>当某对象需要从另外一个对象中获取数据时，可以使用委托模式。这种情境下，该模式亦称“数据源协议”（data source protocal）。</li><li>若有必要，可实现含有位段的结构体，将委托对象是否能响应相关协议方法这一信息缓存至其中。</li></ul><h4 id="24-将类的实现代码分散到便于管理的数个分类之中"><a href="#24-将类的实现代码分散到便于管理的数个分类之中" class="headerlink" title="24.将类的实现代码分散到便于管理的数个分类之中"></a>24.将类的实现代码分散到便于管理的数个分类之中</h4><ul><li>使用分类机制把类的实现代码划分成易于管理的小块。</li><li>将应该视为“私有”的方法归入名叫Private的分类中，以隐藏实现细节。</li></ul><h4 id="25-总是为第三方类的分类名称加前缀"><a href="#25-总是为第三方类的分类名称加前缀" class="headerlink" title="25.总是为第三方类的分类名称加前缀"></a>25.总是为第三方类的分类名称加前缀</h4><ul><li>向第三方类中添加分类时，总应给其名称加上你专用的前缀。</li><li>向第三方类中添加分类时，总应给其中的方法名加上你专用的前缀。</li></ul><h4 id="26-勿在分类中声明属性"><a href="#26-勿在分类中声明属性" class="headerlink" title="26.勿在分类中声明属性"></a>26.勿在分类中声明属性</h4><ul><li>把封装数据所用的全部属性都定义在主接口里。</li><li>在“class-continuation分类”之外的其他分类中，可以定义存取方法，但尽量不要定义属性。</li></ul><h4 id="27-使用“class-continuation分类”隐藏实现细节"><a href="#27-使用“class-continuation分类”隐藏实现细节" class="headerlink" title="27.使用“class-continuation分类”隐藏实现细节"></a>27.使用“class-continuation分类”隐藏实现细节</h4><ul><li>通过“class-continuation分类”向类中新增实例变量。</li><li>如果某属性在主接口中声明为“只读”，而类的内部又要用设置方法修改此属性，那么就在“class-continuation分类”中将其扩展为“可读写”。</li><li>把私有方法的原型声明在“class-continuation分类”里面。</li><li>若想使类所遵循的协议不为人所知，则可于“class-continuation分类”中声明。</li></ul><h4 id="28-通过协议提供匿名对象"><a href="#28-通过协议提供匿名对象" class="headerlink" title="28.通过协议提供匿名对象"></a>28.通过协议提供匿名对象</h4><ul><li>协议可在某种程度上提供匿名类型。具体的对象类型可以淡化成遵从某协议的id类型，协议里规定了对象所应实现的方法。</li><li>使用匿名对象来隐藏类型名称（或类名）。</li><li>如果具体类型不重要，重要的是对象能够响应（定义在协议里的）特定方法，那么可以使用匿名对象来表示。</li></ul>]]></content>
     
     <summary type="html">
     
