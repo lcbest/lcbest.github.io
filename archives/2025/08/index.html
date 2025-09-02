@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>【iOS 开发】优化 iOS 安装包大小 | Chance</title>
+    <title>Chance | Stay hungry, stay foolish.</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -17,11 +17,11 @@
     <meta name="description" content="iOS developer">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="【iOS 开发】优化 iOS 安装包大小 | Chance">
+    <meta name="twitter:title" content="Chance | Stay hungry, stay foolish.">
     <meta name="twitter:description" content="iOS developer">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="【iOS 开发】优化 iOS 安装包大小 | Chance">
+    <meta property="og:title" content="Chance | Stay hungry, stay foolish.">
     <meta property="og:description" content="iOS developer">
 
     
@@ -39,7 +39,7 @@
     <link rel="alternate" type="application/rss+xml" title="Chance" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://chanceli.com/优化iOS安装包大小/"/>
+    <link rel="canonical" href="http://chanceli.com"/>
 
                  
 </head>
@@ -156,100 +156,50 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <article class="post-container post-container--single">
-
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="2019-09-09T16:00:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-meta__tags tags">于 
-  <a class="tag-link" href="/tags/iOS开发/">iOS开发</a>
- </span>
-      <span class="page-pv">
-       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
-      </span> 
-   
-    </div>
-    <h1 class="post-title">【iOS 开发】优化 iOS 安装包大小</h1>
-  </header>
-
-  <section class="post">
-    <p>最近优化了一下我负责的两个App ipa 包大小，记录一下优化方法。</p>
-<h3 id="App1"><a href="#App1" class="headerlink" title="App1:"></a>App1:</h3><p>优化前：37.8MB 优化后：15.7MB</p>
-<ol>
-<li>移除重复图片，多余图片，压缩大的图片，去掉用不到的类。包大小变为35.1MB，减少了2.7MB。</li>
-<li>把环信含音视频的 SDK 换成不含音视频的 SDK。包大小变为28MB，减少了7.1MB。</li>
-<li>移除 armv7，不再支持 iPhone 4、iPhone 4s。包大小变为20.4MB，减少了7.6MB。</li>
-<li>移除百度地图 SDK (项目里只用到了百度定位 SDK )。包大小变为16.6MB，减少了3.8MB。</li>
-<li>移除环信 UI 中的兔斯基 GIF 图。包大小变为16MB，减少了0.6MB。</li>
-<li>启动图替换为压缩后的启动图。包大小变为15.7MB，减少了0.3MB。</li>
-</ol>
-<h3 id="App2："><a href="#App2：" class="headerlink" title="App2："></a>App2：</h3><p>优化前：27.7MB 优化后：9.2MB</p>
-<ol>
-<li>移除环信音视频 SDK，包大小变为20.3MB，减少了7.4MB。</li>
-<li>移除百度地图 SDK，包大小变为14.8MB，减少了5.5MB。</li>
-<li>移除 armv7，包大小变为9.8MB，减少了5MB。</li>
-<li>移除环信 UI 中的兔斯基 GIF 图。包大小变为9.2MB，减少了0.6MB。</li>
-</ol>
-<h3 id="小提示"><a href="#小提示" class="headerlink" title="小提示"></a>小提示</h3><ul>
-<li>AppStore 上 App 信息中的展示的大小指的是安装大小，并非下载大小。所以要比打出来的 ipa 包大很多。</li>
-<li>在各个机型上面的大小也不尽相同。</li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>通过这次实践，我发现影响包大小的主要因素是某些较大的第三方库及库里的图片，以及支持iPhone 4、4s 的 armv7。对于用不到的类、图片等资源文件要及时清理，使用被蓝湖等工具压缩过的图片等方式来改善安装包大小。</p>
-
-  </section>
-
-</article>
-
-<section class="read-more">
-           
+            <div class="main-post-list">
     
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/DataStructurePart4/" title="《大话数据结构》四">《大话数据结构》四</a></h2>
-                <p class="excerpt">
-                
-                第5章 串串（string）是由零个或多个字符组成的有限序列，又名叫字符串。
-串的定义
-串（string）是由零个或多个字符组成的有限序列，又名叫字符串。
-
-串的比较给定两个串：s= “a1a2……an“,  t= “b1b2……bm“, 当满足以下条件之一时，s&amp;lt;t。
-
-n&amp;lt;m，且ai
-                &hellip;
-                </p>
-                <div class="post-list__meta"><time datetime="2019-09-10T14:24:00.000Z" class="post-list__meta--date date">2019-09-10</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
-</span><a class="btn-border-small" href="/DataStructurePart4/">阅读全文</a></div>
-                           
-            </div>
-        
-        
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">更早的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/DataStructurePart3/" title="《大话数据结构》三">《大话数据结构》三</a></h2>
-                <p class="excerpt">
-                
-                第4章 栈与队列栈是限定仅在表尾进行插入和删除操作的线性表。队列是只允许在一端进行插入操作、而在另一端进行删除操作的线性表。
-栈的定义
-栈（stack）是限定仅在表尾进行插入和删除操作的线性表。
-
-我们把允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何数据元素的栈称为
-                &hellip;
-                </p>
-                <div class="post-list__meta"><time datetime="2019-09-08T14:58:00.000Z" class="post-list__meta--date date">2019-09-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/学习笔记/">学习笔记</a>
-</span><a class="btn-border-small" href="/DataStructurePart3/">阅读全文</a></div>
-                       
-            </div>
-        
-     
-   
-   
+  <ol class="post-list">
   
-</section>
-
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/【Harmony】鸿蒙开发经验/" title="link to post.title">【Harmony】鸿蒙开发经验</a></h2>
+      <p class="excerpt">
+    
+      1.下拉刷新不支持边缘滑动效果问题描述页面下拉刷新无响应，拉不动
+原因The edgeEffect value must be EdgeEffect.None[图片][图片]文档链接：https://ohpm.openharmony.cn/#/cn/detail/@ohos%2Fpulltorefresh另外关联的scroller也需要设置
+2.lottie name不能相同问题描述从首页跳转到租
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2025-08-04T07:15:00.000Z" class="post-list__meta--date date">2025-08-04</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/鸿蒙开发/">鸿蒙开发</a>
+</span><a class="btn-border-small" href="/【Harmony】鸿蒙开发经验/">阅读全文</a></div>
+      <hr class="post-list__divider">
+    </li>
   
+    
+  </ol>
+
+
+ <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    }); 
+    
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</div>
+
 
             <footer class="footer">
     <span id="busuanzi_container_site_pv">
